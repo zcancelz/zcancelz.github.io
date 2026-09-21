@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Board Dice · Android</title>
+  <meta name="description" content="보드게임 할 떄 사용 하기 편한 주사위 앱 입니다.">
+  <style>
+    :root {
+      --bg: #f5f7fa;
+      --surface: #ffffff;
+      --text: #1d2733;
+      --muted: #5b6b7c;
+      --accent: #2f6fdf;
+      --line: #dde3ea;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #12171d;
+        --surface: #1a2129;
+        --text: #e6ebf0;
+        --muted: #9aa8b6;
+        --accent: #6fa0ff;
+        --line: #2a333d;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+      line-height: 1.7;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 56px 20px 80px; }
+    header { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
+    .icon {
+      width: 72px; height: 72px; border-radius: 18px;
+      background: var(--accent); color: #fff;
+      display: grid; place-items: center; font-size: 36px; flex-shrink: 0;
+    }
+    h1 { font-size: 1.9rem; margin: 0; line-height: 1.25; }
+    .tagline { margin: 4px 0 0; color: var(--muted); }
+    h2 { font-size: 1.2rem; margin: 48px 0 12px; padding-top: 24px; border-top: 1px solid var(--line); }
+    h3 { font-size: 1rem; margin: 24px 0 6px; }
+    ul { padding-left: 1.2em; }
+    a { color: var(--accent); }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .store {
+      display: inline-block; margin-top: 16px; padding: 12px 20px;
+      background: var(--text); color: var(--bg);
+      border-radius: 10px; text-decoration: none; font-weight: 600;
+    }
+    nav { margin-top: 20px; display: flex; gap: 16px; flex-wrap: wrap; font-size: .95rem; }
+    .muted { color: var(--muted); font-size: .9rem; }
+    footer { margin-top: 64px; color: var(--muted); font-size: .85rem; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="icon" aria-hidden="true">🎲</div>
+    <div>
+      <h1>앱 이름</h1>
+      <p class="tagline">앱이 무엇을 해주는지 한 문장으로 적습니다.</p>
+    </div>
+  </header>
+
+  <a class="store" href="https://play.google.com/store/apps/details?id=com.example.app">Google Play에서 받기</a>
+
+  <nav>
+    <a href="#features">주요 기능</a>
+    <a href="#privacy">개인정보처리방침</a>
+    <a href="#support">문의</a>
+  </nav>
+
+  <section id="features">
+    <h2>주요 기능</h2>
+    <ul>
+      <li>주사위 갯수를 6개까지 선택할 수 있습니다.</li>
+      <li>주사위를 4/6/8/10/12 면체를 각각 선택할 수 있습니다.</li>
+      <li>스킨을 변경 할 수 있습니다.</li>
+    </ul>
+  </section>
+
+  <section id="privacy">
+    <h2>개인정보처리방침</h2>
+    <p class="muted">시행일: 2026년 9월 21일</p>
+
+    <h3>수집하는 정보</h3>
+    <p>이 앱은 이름, 이메일, 위치, 연락처 등 개인을 식별할 수 있는 정보를 수집하지 않습니다. 앱 설정 등 사용 데이터는 기기 안에만 저장되며 외부 서버로 전송되지 않습니다.</p>
+
+    <h3>제3자 서비스</h3>
+    <p>이 앱은 광고, 분석 등 제3자 서비스를 사용하지 않습니다.</p>
+
+    <h3>아동의 개인정보</h3>
+    <p>이 앱은 어떤 사용자로부터도 개인정보를 수집하지 않으며, 아동의 정보 역시 수집하지 않습니다.</p>
+
+    <h3>방침 변경</h3>
+    <p>내용이 바뀌면 이 페이지에 게시하고 시행일을 갱신합니다.</p>
+  </section>
+
+  <section id="support">
+    <h2>문의</h2>
+    <p>버그 제보나 문의는 <a href="mailto:zcancelz@gmail.com">zcancelz@gmail.com</a>으로 보내 주세요.</p>
+  </section>
+
+  <footer>© 2026 Brown Kwon</footer>
+</main>
+</body>
+</html>
